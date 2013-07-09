@@ -1,15 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  uid: MyString
-  provider: MyString
-  username: MyString
-  oauth_token: MyString
-  oauth_secret: MyString
-
-two:
-  uid: MyString
-  provider: MyString
-  username: MyString
-  oauth_token: MyString
-  oauth_secret: MyString
+john:
+  uid: 1
+  provider: Ritter
+  username: JonDoe
+  oauth_token: token
+  oauth_secret: secret

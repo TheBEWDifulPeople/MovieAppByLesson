@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
-  year_released: 1
+matrix:
+  title: The Matrix
+  description: A future run by machines
+  year_released: 1999
 
-two:
-  title: MyString
-  description: MyText
-  year_released: 1
+fight_club:
+  title: Fight Club
+  description: Never heard of it...
+  year_released: 1999

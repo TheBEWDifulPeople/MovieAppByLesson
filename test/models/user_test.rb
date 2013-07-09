@@ -15,4 +15,12 @@ class UserTest < ActiveSupport::TestCase
     user2 = User.from_omniauth(OmniAuth::auth_hash)
     assert_equal(user1, user2)
   end
+
+  test "can create reviews for movies" do
+    the_matrix = movies(:matrix)
+    bob = User.create
+    bob.reviews
+    bob.reviews.create(post: "'I enjoyed this very much' - Abraham Lincoln", movie: the_matrix)
+    assert_equal 1, the_matrix.reviews.count
+  end
 end

@@ -42,4 +42,11 @@ class MovieTest < ActiveSupport::TestCase
     @movie.rating = 5
     assert @movie.valid?, "Should be valid!"
   end
+
+  test "has reviews created by users" do
+    john = users(:john)
+    @movie.save
+    @movie.reviews.create(post: "Great flick", user: john)
+    assert_equal 1, @movie.reviews.count
+  end
 end
