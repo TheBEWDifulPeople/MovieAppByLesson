@@ -16,7 +16,7 @@ class UserTest < ActiveSupport::TestCase
     assert_equal(user1, user2)
   end
 
-  test "can create reviews for movies" do
+  test "creates reviews" do
     the_matrix = movies(:matrix)
     bob = User.create
     bob.reviews

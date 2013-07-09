@@ -31,6 +31,8 @@ class MoviesController < ApplicationController
   end
 
   def show
+    @review = @movie.reviews.build
+    @reviews = @movie.reviews
   end
 
   def search
